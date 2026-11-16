@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Жовтневі Канікули 2.0 — прогрес збору</title>
-<meta name="description" content="Прогрес збору «Жовтневі Канікули 2.0» — Діснейленд для 70 дітей наших героїв. Фонд «Твоє Майбутнє»."/>
+<title>++ — прогрес збору</title>
+<meta name="description" content="Прогрес збору «++» — зарядні станції та генератори для бойових бригад, ППО і стабпункту. Фонд «Твоє Майбутнє»."/>
 
 <!-- OG / соцмережі (статичні; живі цифри підставляються лише за наявності серверного кроку) -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://dmitriykozyatinskiy.github.io/october-holidays/"/>
-<meta property="og:title" content="Жовтневі Канікули 2.0 — Діснейленд для дітей наших героїв"/>
-<meta property="og:description" content="Збираємо 2 915 500 ₴, щоб 70 дітей загиблих воїнів поїхали в Діснейленд. Відкрий свою Дружню банку."/>
+<meta property="og:title" content="Збір ++ — зарядні станції та генератори для бійців"/>
+<meta property="og:description" content="Збираємо 2 000 000 ₴ на 10 запитів від військових: майно, яке створює напругу і світло. Відкрий свою Дружню банку."/>
 <meta property="og:image" content="https://dmitriykozyatinskiy.github.io/october-holidays/og.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dmitriykozyatinskiy.github.io/october-holidays/og.jpg"/>
@@ -22,20 +22,20 @@
 
 <style>
 :root{
-  --ink:#1b1f3b;            /* нічний синій (шпилі замку) */
-  --ink-2:#262b52;
-  --olive:#2f3770;          /* індиго сутінкового неба */
-  --paper:#e7e6f2;          /* лавандовий (фон) */
-  --paper-2:#efeef8;
-  --card:#fbfaff;           /* поверхня картки */
-  --acc:#d9536a;            /* рожевий акцент yourfuture.in.ua (глибший, для тексту на світлому) */
-  --acc-bright:#ef7686;     /* рожевий прогрес-бар сайту фонду */
-  --acc-deep:#a8354b;
-  --line:#c4c3dc;           /* межі */
-  --line-soft:#d6d5ea;
-  --muted:#6a6b8c;          /* вторинний текст */
-  --white:#fbfaff;
-  --good:#d9536a;
+  --ink:#16181c;            /* графіт (бетон у темряві) */
+  --ink-2:#22252b;
+  --olive:#2c3038;          /* темний бетон */
+  --paper:#e6e7e9;          /* світлий бетон (фон) */
+  --paper-2:#eeeff1;
+  --card:#fbfbfc;           /* поверхня картки */
+  --acc:#1f6fd1;            /* електричний синій «++» (для тексту на світлому) */
+  --acc-bright:#4fb3ff;     /* блискавка / хромовані «++» */
+  --acc-deep:#14529e;
+  --line:#c3c6cc;           /* межі */
+  --line-soft:#d5d7db;
+  --muted:#666b75;          /* вторинний текст */
+  --white:#fbfbfc;
+  --good:#1f6fd1;
   --shadow: 5px 5px 0 var(--ink);
   --maxw:1120px;
 }
@@ -83,48 +83,48 @@ a{color:inherit}
 .brand-mark svg{width:18px;height:18px}
 .brand-txt{font-family:"Oswald",sans-serif;text-transform:uppercase;line-height:1}
 .brand-txt b{font-weight:700;letter-spacing:.08em;font-size:.92rem;display:block}
-.brand-txt span{font-size:.58rem;letter-spacing:.18em;color:#b9b3a3;font-family:"Manrope";font-weight:600}
+.brand-txt span{font-size:.58rem;letter-spacing:.18em;color:#aeb3bb;font-family:"Manrope";font-weight:600}
 .wordmark{font-family:"Rubik Wet Paint","Oswald",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;
   font-size:clamp(1.7rem,4.4vw,2.8rem);line-height:1;color:var(--white);white-space:nowrap}
 .wordmark .ver{color:var(--acc-bright)}
-.banner-right{font-family:"Oswald";font-weight:500;letter-spacing:.1em;font-size:.74rem;color:#c9c3b2;text-transform:uppercase;text-align:right}
+.banner-right{font-family:"Oswald";font-weight:500;letter-spacing:.1em;font-size:.74rem;color:#c3c7ce;text-transform:uppercase;text-align:right}
 .banner-right .tg{color:var(--acc-bright)}
 
 /* ───────── hero (split: ink-панель даних + фото-панель) ───────── */
 .hero{position:relative;z-index:1;display:grid;min-height:clamp(420px,46vw,560px);
   color:var(--white);border-bottom:4px solid var(--ink);overflow:hidden;background:var(--ink)}
-.hero-photo{position:absolute;inset:0;background:#1b1f3b right 30%/cover no-repeat}
+.hero-photo{position:absolute;inset:0;background:#16181c center 45%/cover no-repeat}
 .hero-photo::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(27,31,59,.92) 0%,rgba(27,31,59,.72) 40%,rgba(27,31,59,.15) 75%,transparent 100%),
-             linear-gradient(0deg,rgba(47,55,112,.8) 0%,transparent 45%)}
+  background:linear-gradient(90deg,rgba(22,24,28,.92) 0%,rgba(22,24,28,.72) 40%,rgba(22,24,28,.15) 75%,transparent 100%),
+             linear-gradient(0deg,rgba(44,48,56,.8) 0%,transparent 45%)}
 .hero-data{position:relative;z-index:2;display:flex;align-items:flex-end}
 .hero-in{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;padding:40px 18px 32px}
 .hero-in > *{max-width:760px}
 .hero-title{font-family:"Unbounded","Oswald",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;font-size:clamp(1.7rem,5.6vw,3.9rem);line-height:.95;white-space:nowrap;
   margin:6px 0 18px;color:var(--white);text-shadow:0 3px 24px rgba(0,0,0,.5)}
-.hero-title .ver{color:var(--acc-bright)}
+.hero-title .ver{background:linear-gradient(180deg,#eaf6ff 0%,#9fd3ff 35%,#2f7fe0 60%,#d9ecff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 14px rgba(79,179,255,.55));letter-spacing:.02em}
 .hero-eyebrow{display:flex;gap:8px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
 .hero-eyebrow .tag{font-size:.66rem;letter-spacing:.16em}
 .hero-figs{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:6px}
 .hero-pct{font-family:"Oswald",sans-serif;font-weight:700;font-size:clamp(3.6rem,11vw,7rem);line-height:.82;letter-spacing:-.01em;
   text-shadow:0 2px 30px rgba(0,0,0,.4)}
 .hero-collected{padding-bottom:.5em}
-.hero-collected .lab{font-family:"Oswald";font-weight:500;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;color:#d8d2c2;margin-bottom:4px}
+.hero-collected .lab{font-family:"Oswald";font-weight:500;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;color:#d4d7dd;margin-bottom:4px}
 .hero-collected .amt{font-family:"Oswald";font-weight:700;font-size:clamp(1.5rem,4.4vw,2.4rem);line-height:1}
 .hero-equiv{margin:12px 0 14px}
 .hero-equiv .tag{font-size:clamp(.86rem,2.4vw,1.12rem);letter-spacing:.03em;font-weight:700}
 .hero-track{height:16px;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.4);max-width:640px;overflow:hidden;border-radius:10px}
 .hero-fill{border-radius:10px}
-.hero-fill{height:100%;width:0;background:var(--acc-bright);box-shadow:0 0 18px rgba(239,118,134,.55);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.hero-fill{height:100%;width:0;background:var(--acc-bright);box-shadow:0 0 18px rgba(79,179,255,.55);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
 .hero-meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
-.hero-goal{font-family:"Oswald";font-weight:500;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;color:#e7e1d1}
+.hero-goal{font-family:"Oswald";font-weight:500;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;color:#e4e6ea}
 .delta-pill{display:inline-flex;align-items:center;gap:5px;background:var(--acc);color:var(--white);
   font-family:"Oswald";font-weight:600;letter-spacing:.04em;font-size:.78rem;padding:3px 9px;text-transform:uppercase}
 .delta-pill.up::before{content:"▲";font-size:.6em}
-.hero-upd{margin-top:10px;font-size:.74rem;font-weight:600;color:#d3d5ee;display:flex;align-items:center;gap:7px}
+.hero-upd{margin-top:10px;font-size:.74rem;font-weight:600;color:#d3d6dc;display:flex;align-items:center;gap:7px}
 .hero-upd::before{content:"";width:7px;height:7px;border-radius:50%;background:#8fc97a;box-shadow:0 0 0 3px rgba(143,201,122,.2)}
 .hero-upd.stale::before{background:#e0a43c;box-shadow:0 0 0 3px rgba(224,164,60,.2)}
-.forecast{margin-top:12px;font-size:.8rem;font-weight:600;color:#e7e1d1;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.forecast{margin-top:12px;font-size:.8rem;font-weight:600;color:#e4e6ea;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .forecast b{color:var(--acc-bright);font-weight:800}
 .forecast .arr{color:var(--acc-bright)}
 
@@ -149,10 +149,10 @@ a{color:inherit}
 .stats-in{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
 .stat{padding:16px 16px;border-right:1px solid #444c8a;text-align:center;color:#cfc9b9}
 .stat:last-child{border-right:none}
-.stat .l{font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b9bde0;margin-bottom:5px}
+.stat .l{font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b7bcc6;margin-bottom:5px}
 .stat .v{font-family:"Oswald";font-weight:700;font-size:1.7rem;line-height:1;color:var(--white);letter-spacing:.01em}
 .stat .v.acc{color:var(--acc-bright)}
-.stat .s{font-size:.72rem;color:#b6b0a0;margin-top:4px;font-weight:600}
+.stat .s{font-size:.72rem;color:#a9aeb7;margin-top:4px;font-weight:600}
 .stat .e{font-size:.66rem;color:var(--acc-bright);margin-top:3px;font-weight:700;letter-spacing:.02em}
 .lots-row{display:flex;gap:2px;justify-content:center;margin-top:8px;flex-wrap:wrap;max-width:170px;margin-inline:auto}
 .lots-row i{width:7px;height:7px;border:1px solid #7f86bd;background:transparent}
@@ -160,7 +160,7 @@ a{color:inherit}
 
 /* ───────── rishalo ───────── */
 .rishalo{position:relative;z-index:1;background:var(--ink);color:var(--white);padding:22px 0;border-bottom:4px solid var(--ink-2);
-  background-image:radial-gradient(circle at 88% 18%,rgba(239,118,134,.18),transparent 42%)}
+  background-image:radial-gradient(circle at 88% 18%,rgba(79,179,255,.18),transparent 42%)}
 .rishalo-in{max-width:var(--maxw);margin:0 auto;padding:0 18px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .rishalo-badge{font-family:"Oswald";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:1rem;
   display:flex;align-items:center;gap:8px;white-space:nowrap}
@@ -169,14 +169,14 @@ a{color:inherit}
 .rishalo-nick{font-family:"Oswald";font-weight:700;font-size:clamp(1.5rem,4vw,2.2rem);line-height:1;text-decoration:none;color:var(--white)}
 .rishalo-nick:hover{text-decoration:underline;text-decoration-color:var(--acc-bright)}
 .rishalo-gain{background:var(--acc-bright);color:var(--ink);font-family:"Oswald";font-weight:700;font-size:1.15rem;padding:3px 11px;white-space:nowrap}
-.rishalo-prog{font-size:.84rem;color:#d8d2c2;font-weight:600}
-.rishalo-asof{font-size:.66rem;color:#9a9484;letter-spacing:.04em;margin-top:2px;width:100%}
+.rishalo-prog{font-size:.84rem;color:#d4d7dd;font-weight:600}
+.rishalo-asof{font-size:.66rem;color:#8d929b;letter-spacing:.04em;margin-top:2px;width:100%}
 .copy-btn{font-family:"Manrope";font-weight:700;font-size:.78rem;background:transparent;color:var(--white);
   border:2px solid var(--acc-bright);padding:9px 14px;cursor:pointer;white-space:nowrap;
   transition:background .15s,color .15s;display:inline-flex;gap:7px;align-items:center}
 .copy-btn:hover{background:var(--acc-bright);color:var(--ink)}
 .copy-btn.done{background:var(--acc-bright);color:var(--ink)}
-.rishalo-empty{color:#b6b0a0;font-weight:600}
+.rishalo-empty{color:#a9aeb7;font-weight:600}
 
 /* ───────── grid ───────── */
 .section{position:relative;z-index:1}
@@ -206,7 +206,7 @@ a.jar-name:hover{text-decoration:underline;text-decoration-color:var(--acc)}
 .amt-sep{font-size:.78rem;color:var(--muted)}
 .amt-g{font-size:.82rem;color:var(--muted);font-weight:700}
 .card-delta{margin-left:auto;background:var(--acc);color:var(--white);font-family:"Oswald";font-weight:600;font-size:.72rem;padding:2px 7px;white-space:nowrap}
-.nodata{font-size:.84rem;color:#b3ac99;font-weight:600}
+.nodata{font-size:.84rem;color:#a3a8b0;font-weight:600}
 .ptrack{height:10px;background:var(--paper);border:1.5px solid var(--line);overflow:hidden;margin-bottom:6px}
 .pfill{height:100%;width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
 .card.closed .pfill{background:#c3b89c!important}
@@ -215,10 +215,10 @@ a.jar-name:hover{text-decoration:underline;text-decoration-color:var(--acc)}
 /* ───────── cta ───────── */
 .cta{max-width:var(--maxw);margin:34px auto 0;padding:0 18px}
 .cta-box{background:var(--ink);color:var(--white);padding:30px 26px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
-  border:2px solid var(--ink);background-image:radial-gradient(circle at 92% 0%,rgba(239,118,134,.2),transparent 46%)}
+  border:2px solid var(--ink);background-image:radial-gradient(circle at 92% 0%,rgba(79,179,255,.2),transparent 46%)}
 .cta-txt{flex:1;min-width:240px}
 .cta-txt h3{font-family:"Oswald";font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:clamp(1.5rem,4vw,2.1rem);line-height:1;margin-bottom:9px}
-.cta-txt p{color:#d8d2c2;font-size:.95rem;font-weight:500;max-width:48ch}
+.cta-txt p{color:#d4d7dd;font-size:.95rem;font-weight:500;max-width:48ch}
 .cta-btns{display:flex;gap:10px;flex-wrap:wrap}
 .cta-btn.ghost{background:transparent;color:var(--white);border-color:#5a6199}
 .cta-btn.ghost:hover{border-color:var(--white)}
@@ -269,7 +269,7 @@ body.embed .hero{border-top:4px solid var(--acc-bright)}
   .hero{min-height:0}
   .hero-in{padding-top:120px}
   .hero-photo{background-position:28% 40%}
-  .hero-photo::after{background:linear-gradient(0deg,rgba(27,31,59,.95) 0%,rgba(27,31,59,.8) 55%,rgba(27,31,59,.3) 100%)}
+  .hero-photo::after{background:linear-gradient(0deg,rgba(22,24,28,.95) 0%,rgba(22,24,28,.8) 55%,rgba(22,24,28,.3) 100%)}
   .hero-in{margin:0;max-width:none}
 }
 @media (max-width:600px){
@@ -311,19 +311,19 @@ body.embed .hero{border-top:4px solid var(--acc-bright)}
       </span>
       <span class="brand-txt"><b>Твоє Майбутнє</b><span>Благодійний фонд</span></span>
     </div>
-    <div class="banner-right">Діснейленд для дітей наших героїв<br><span class="tg">@yourfuture.in.ua</span></div>
+    <div class="banner-right">Зарядні станції · генератори<br><span class="tg">@yourfuture.in.ua</span></div>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero-photo" id="heroPhoto" role="img" aria-label="Замок Діснейленду на світанку"></div>
+  <div class="hero-photo" id="heroPhoto" role="img" aria-label="Генератор і зарядні станції у світлі прожектора"></div>
   <div class="hero-data">
   <div class="hero-in">
     <div class="hero-eyebrow">
-      <span class="tag acc">Діснейленд для дітей наших героїв</span>
+      <span class="tag acc">Напруга і світло для бійців</span>
     </div>
-    <h1 class="hero-title">Жовтневі канікули <span class="ver">2.0</span></h1>
+    <h1 class="hero-title">Збір <span class="ver">++</span></h1>
     <div class="hero-figs">
       <div class="hero-pct" id="heroPct">0%</div>
       <div class="hero-collected">
@@ -331,10 +331,10 @@ body.embed .hero{border-top:4px solid var(--acc-bright)}
         <div class="amt" id="heroAmt">— ₴</div>
       </div>
     </div>
-    <div class="hero-equiv"><span class="tag inv" id="heroEquiv">= 0 дітей з 70</span></div>
+    <div class="hero-equiv"><span class="tag inv" id="heroEquiv">= 0 запитів з 10</span></div>
     <div class="hero-track"><div class="hero-fill" id="heroFill"></div></div>
     <div class="hero-meta">
-      <span class="hero-goal" id="heroGoal">мета 2 915 500 ₴</span>
+      <span class="hero-goal" id="heroGoal">мета 2 000 000 ₴</span>
       <span class="delta-pill up" id="heroDelta" style="display:none"></span>
     </div>
     <div class="hero-upd" id="heroUpd"></div>
@@ -375,7 +375,7 @@ body.embed .hero{border-top:4px solid var(--acc-bright)}
   <div class="cta-box">
     <div class="cta-txt">
       <h3>Наступна Дружня банка — твоя</h3>
-      <p>25–31 жовтня 70 дітей загиблих воїнів поїдуть Київ — Прага — Нюрнберг — Париж — Дрезден і побачать Діснейленд. Задонать в основну банку або відкрий власну Дружню банку: напиши фонду в приватні повідомлення.</p>
+      <p>Наприкінці року запитів від військових стало більше, ніж може закрити монобаза фонду. 10 запитів на 2 000 000 ₴: зарядні станції та генератори для бойових бригад, ППО і стабпункту. Задонать в основну банку або відкрий власну Дружню банку: напиши фонду в приватні повідомлення.</p>
     </div>
     <div class="cta-btns">
       <a class="cta-btn" id="ctaBtn" href="#" target="_blank" rel="noopener">Задонатити</a>
@@ -392,29 +392,29 @@ body.embed .hero{border-top:4px solid var(--acc-bright)}
 
 <script>
 /* ============================================================
-   ЖОВТНЕВІ КАНІКУЛИ 2.0 — живий дашборд збору
+   ++ — живий дашборд збору
    Дані тягнуться напряму з Google Sheets (gviz) у браузері.
    Жодної регенерації: онови таблицю → онови сторінку.
    ============================================================ */
 
 const CONFIG = {
-  sheetId: "1vatLLmFvr3MqCDc4eAIAm_UEFWv9-nmSX8KmqDtLl6E",
+  sheetId: "1kbZuj_7dQRty3Ok5bcyBAO6J-_58wbiCbjEVI78-Yp8",
   banksGid: "0",                      // основний аркуш (перша вкладка) — за gid, без назви
   snapshotsSheet: "snapshots",        // опційний аркуш (денний прогрес)
   jarSnapshotsSheet: "jar_snapshots", // опційний аркуш (Дружбанчик дня)
   // параметри кампанії
-  goal: 2915500,
-  courseCost: 41650,        // подорож однієї дитини = ціль ÷ 70
-  courses: 70,              // дітей у проєкті
-  unit: ["дитина","дитини","дітей"],   // відмінки для plural()
+  goal: 2000000,
+  courseCost: 200000,       // середній запит = ціль ÷ 10
+  courses: 10,              // запитів від військових у зборі
+  unit: ["запит","запити","запитів"],   // відмінки для plural()
   totalLots: null,          // null → рахуємо з таблиці (банки з «Є» у «Розіграш»)
-  deadline: "2026-10-24",   // виїзд 25.10 — збір до 24.10 (уточнити);           // "YYYY-MM-DD" (Київ) → з'явиться прогноз «потрібно ₴/день»; null — без прогнозу
+  deadline: null,           // "YYYY-MM-DD" (Київ) → з'явиться прогноз «потрібно ₴/день»; null — без прогнозу
   updateHours: 3,           // частота оновлення (launchd на Mac — кожні 3 год)
   mainJarBalance: 0,        // баланс «Основної банки» фонду, ₴ (браузер не читає monobank). 0 = рахувати лише банки учасників; впишіть число вручну за потреби
   // плейсхолдери замовника (TZ §8)
-  ctaUrl: "https://send.monobank.ua/jar/vFkjs1F6e",   // основна банка збору
-  projectUrl: "https://yourfuture.in.ua/projects/october_holidays_2_0/",
-  heroPhoto: "hero.jpg",    // кроп кампанійного постера (без тексту)
+  ctaUrl: "https://send.monobank.ua/jar/2nsMLjC3h2",   // основна банка збору
+  projectUrl: "https://yourfuture.in.ua/military-projects/plus_plus/",
+  heroPhoto: "hero.jpg",    // кроп постера «++» (генератор у світлі прожектора)
 };
 
 /* ---------- helpers ---------- */
@@ -697,7 +697,7 @@ function renderDaily(M){
 
 function renderStats(M){
   const chips=[
-    {l:"Збір на",v:String(CONFIG.courses),vc:"acc",s:"дітей у Діснейленд"},
+    {l:"Збір на",v:String(CONFIG.courses),vc:"acc",s:"запитів від військових"},
     {l:"Активних банок",v:fmtInt(M.activeCount),vc:"acc",s:`${fmtMoney(M.activeLeft,0)} лишилось зібрати`},
     {l:"Закритих банок",v:fmtInt(M.closedCount),vc:"",s:`${fmtMoney(M.closedSum,0)} зібрано`,e:`≈ ${M.closedRehab} ${unit(M.closedRehab)}`},
     {l:"Всього зібрано",v:fmtMoney(M.total,0),vc:"acc",s:`з ${fmtMoney(CONFIG.goal,0)}`,small:true},
